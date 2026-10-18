@@ -1,0 +1,64 @@
+# ============================================================
+#  .gitignore - LoginMod (NeoForge 1.21.1)
+# ============================================================
+
+### Gradle (cache y compilados: se regeneran solos) ###
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/**/build/
+
+### Servidor / cliente de pruebas (MUY IMPORTANTE) ###
+# Aqui estan loginmod-users.json (hashes de contraseñas),
+# IPs, mundos, logs, ops.json, etc. NUNCA subir.
+run/
+run-data/
+runs/
+!**/src/**/run/
+
+### Datos del mod por si se generan fuera de run/ ###
+loginmod-users.json
+loginmod-*.toml.bak
+*.log
+*.log.gz
+
+### Datos generados por datagen (descomenta si NO quieres subirlos) ###
+# src/generated/
+**/src/generated/**/.cache/
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/**/out/
+.run/
+
+### Eclipse ###
+.apt_generated
+.classpath
+.eclipse/
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/**/bin/
+
+### VS Code ###
+.vscode/
+
+### Sistema operativo ###
+.DS_Store
+Thumbs.db
+desktop.ini
+
+### Secretos / config local ###
+local.properties
+.env
+*.key
+*.pem
+*.jks
+*.keystore
